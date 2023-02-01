@@ -5,9 +5,7 @@ var skillsCtrl = require('../controllers/skills');
 /* GET users listing. */
 router.get('/', skillsCtrl.index);
 
-
-router.get('/', function(req, res, next) {
-  res.render('respond with a resource');
-});
+//get skills:id
+router.get('/:id', skillsCtrl.show);
 
 module.exports = router;
